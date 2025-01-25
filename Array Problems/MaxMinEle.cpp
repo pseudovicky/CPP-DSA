@@ -16,15 +16,19 @@ int main(){
     }
     int smallest = INT_MAX;
     int maximum = INT_MIN;
-
+    int maxIndex ;
+    int minIndex;
     for(int i=0;i<size;i++){
         if(Arr[i]<smallest){
             smallest = Arr[i];
+            minIndex = i;
         }else if(Arr[i]>maximum){
             maximum = Arr[i];
+            maxIndex = i;
         }
     }
-    cout<<"\nThe samllest Element in the given array is "<<smallest;
-    cout<<"\nThe Maximum Element in the given array is "<<maximum;
+    cout<<"\nThe samllest Element in the given array is "<<smallest<<"\n minimum Number of index = "<<minIndex;
+    cout<<"\nThe Maximum Element in the given array is "<<maximum<<"\n maximun number of index = "<<maxIndex<<"\n";
+
     return 0;
 }
